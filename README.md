@@ -26,8 +26,8 @@ bootstrap 5.2.3
 
 ### Run Backend
 
-./gradlew bootRun
+$ ./gradlew bootRun
 
 ### Run Frontend
 
-ng serve
+$ ng serve
