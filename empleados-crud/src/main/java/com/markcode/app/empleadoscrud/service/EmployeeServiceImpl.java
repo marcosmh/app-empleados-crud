@@ -32,8 +32,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee createEmployee(Employee employee) {
        System.out.println("EmployeeServiceImpl::createEmployee.....");
        System.out.println(employee.getId() +" - "+
-        employee.getFirtsName() +" - "+
-        employee.getLastName() +" - "+  
+        employee.getFirstName() +" - "+
+        employee.getLastName() +" - "+
         employee.getEmailId()
        );
         return employeeRepository.save(employee);
@@ -44,7 +44,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee = employeeRepository.findById(id)
                 .orElseThrow( () -> new ResourceNotFoundException("Employee not exist with id: " + id));
 
-        employee.setFirtsName(employeeDetails.getFirtsName());
+        employee.setFirstName(employeeDetails.getFirstName());
         employee.setLastName(employeeDetails.getLastName());
         employee.setEmailId(employeeDetails.getEmailId());
         return employeeRepository.save(employee);
