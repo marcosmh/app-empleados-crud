@@ -30,6 +30,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee createEmployee(Employee employee) {
+       System.out.println("EmployeeServiceImpl::createEmployee.....");
+       System.out.println(employee.getId() +" - "+
+        employee.getFirtsName() +" - "+
+        employee.getLastName() +" - "+
+        employee.getEmailId()
+       );
         return employeeRepository.save(employee);
     }
 
