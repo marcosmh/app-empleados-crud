@@ -1,6 +1,8 @@
-# App CRUD Spring Boot & Angular
+# App Spring Boot & Angular
 
-## Especificaciones
+## CRUD Spring Boot & Angular
+
+### Especificaciones
 
 ### Backend:
 
